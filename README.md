@@ -1,5 +1,5 @@
 ﻿# googleChartHtmlLoader
-This in a sample app that can populate a chart provide by google chart with json data. The chart itself is wrapped as in-project html file, which is located inside assets folder. This project utilize Google Chart to drawt the chart.
+This in a sample android app that can populate a chart provide by google chart with json data. The chart itself is wrapped as in-project html file, which is located inside assets folder. This project utilize Google Chart to drawt the chart.
 
 ## Deep Dive
 You can take a look first at MainActivity.kt then go to app/src/main/assets
