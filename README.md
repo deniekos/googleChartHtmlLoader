@@ -70,7 +70,11 @@ chart.draw(data, options);
  ]
  ```
  
-The array itself a mandatory for google chart to draw the charts. You can take a look at [Google Chart Quick Start](https://developers.google.com/chart/interactive/docs/quick_start) to get more insight about the chart. Remember before, we have passed json object from activity to this html. The json will be converted to array, then it will be passed to ```data``` variable using ```data.addRow```. The methods is similiar for every chart type (which stored in different html file).
+The array itself a mandatory for google chart to draw the charts. You can take a look at [Google Chart Quick Start](https://developers.google.com/chart/interactive/docs/quick_start) to get more insight about the chart. 
+
+Remember before, we have passed json object from activity to this html. I try to extract json object from URI using `decodeURI()`. Since my json object is separated from rest of url by `?` char (see `MainActivity.kt` before), the json can be separated by using `split(?)`. To convert json into array, i use `JSON.parse` and `Object.entries`. Then json coverting process into array has complete.
+
+The array constructed before will be passed to ```data``` variable using ```data.addRow```. The methods is similiar for every chart type (which stored in different html file).
  
  
  
